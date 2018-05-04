@@ -19,16 +19,28 @@ The language was created to replace the language ABC. It has become popular on i
 
 
 
-# Unique Features of Python
+## Unique Features
+
+### Python
 While the Python language has evolved over the years by taking in aspects of other languages, it does have a few specific features. First, Python explicitly passes self as a form of a parameter to object member functions. The language also combines things such as data entry - prompting the user for entry and reading it in - to a simple function called 'input()'. Finally, the language incorporates a large number of datatypes such as ordereddict, namedtupke, array, list, tuple, diction, etc; making it popular in the scientific community. 
 
-# Name Space of Python
+### C# 
+
+## Name Space 
+
+### Python
 Name spaces are implemented in Python by using a Dictionary -- Key to value lookup. Some examples of a Python name space are **global names** of a module, **local names** a function, **built-in names** such as abs() and cmp(). The name spaces exist only in the scope they are created.
 
-# Types
+### C#
+
+## Types
+
+### Python
 Python accomodates numeric types such as int, long and float. It also includes some built-in data types such as dictionary, list, set, and tuple. The determination of value or reference in Python is difficult as everything is an object in this language. This means that while the language is passed by value, the value is a reference, or pointer, to the specific object. An easier way to look at values and references in Python is to think of them just names, with the mutable or immmutatable being important. If the passed names are mutatable, they can be rebranded to be anything they need. 
 
 Types in Python can be created or altered. In fact, everything object in Python can be extended to include addictional functions or change the default functions. 
+
+### C#
 
 # Classes
 Classes in Python are created by using the 'class' keyword, the class name, and then a colon before inserting everything needed in the class.
