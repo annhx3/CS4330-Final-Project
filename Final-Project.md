@@ -42,7 +42,9 @@ Types in Python can be created or altered. In fact, everything object in Python 
 
 ### C#
 
-# Classes
+## Classes
+
+### Python 
 Classes in Python are created by using the 'class' keyword, the class name, and then a colon before inserting everything needed in the class.
 For example:
 ```
@@ -59,10 +61,18 @@ x = Car()
 This calls the '__init__()' function on the class. This function can be extended if the creator wanted the instance to do additional features, such as assign variable or run additional functions, in the instantiation period.
 To de-initialize a class in Python the developer can use the close function on an object. This will delete the reference to the object. If the developer wanted to reuse the object in a pool, the developer could modify the close function to just erase the data inside. 
 
-# Instance reference name in data type (class)
+### C# 
+
+## Instance reference name in data type (class)
+
+### Python
 Python uses the 'self' keyword to reference the name of the data type. Python is special in that self doesn't need to be added to the signature as each object recognizes the current instance as 'self'
 
-# Properties
+### C#
+
+## Properties
+
+### Python
 Using 'getters' and 'setters' aren't typically used in Python but can be utilized. The typical way is just to use plain attributes to pass the information and then to dereference the attribute using the 'del' function.
 However, getters and setters can be added to the code to make it consistent to other programming. These can be added using the 'property' decorator without altering the original code
 ```
@@ -74,11 +84,18 @@ class obj:
   def attribute_setter(self, value):
     self.__attribute = value
  ```
+ ### C#
  
- # Interfaces / protocols
+ ## Interfaces / protocols
+ 
+ ### Python
  Python doesn't use interfaces or protocols, as it uses the idea of duck-typing. Duck-typing is applying the idea of "if it looks like a duck, it must be a duck", in programming. This comparison is done at runtime and is handled by the type checking. Generally if the object type and methods work, the interface will work; else a exception will be thrown.
  
-# Inheritance / extension
+ ### C#
+ 
+## Inheritance / extension
+
+### Python
 Inheritance in Python is handled by inluding the parent in the parenthesis after a class declaration.
 ```
 class Person(object):
@@ -89,16 +106,26 @@ class Waiter(Person):
 ```
 In this example, Person is inheriting from Object and Waiter is inheriting from Person. A waiter can use the Person's foo method by using "super().foo()" or by calling it as "Person.greet(self)" from Waiter.
 
-# Reflection
+### C#
+
+## Reflection
+
+### Python
 Reflection refers to the ability of the language to tell attributes about objects that might be passed as parameters to a function. Python is dynamically typed so this ability is important. Using "type(obj)" will return the type of the object in question. Python also has other commands available to assist in reflection. Python uses the "Isinstance()" command to test if an object is an instance of a type or class. The "getattr()" command can return a value of an attribute of an object.
 
-# Memory Management
+### C#
+
+## Memory Management
+
+### Python
 Python stores all objects and data structures in a private heap. This heap is controlled by the Python memory manager, which deals with sharing, segmentation, preallocation, and cachine.
 In addition, Python uses reference counting and garbage collection to maintain memory usage. 
-#### Reference Counting 
+##### Reference Counting 
 Reference counting is the idea that an object needs to be maintained when the count of that object is greater than 0. 
-#### Garbage Collection
+##### Garbage Collection
 Garbage collection is automatic in Python and happens when the code can no longer 'reach' an object. Examples of garbage collection are when "del" is used on an object or when an object is set equal to None(Null). Garbage collection is typically performed automatically but can be manually called by using "gc.collect()"
+
+### C# 
 
 # Comparisons of References and Values
 Python uses "==" and "is" for comparing references and values.  In Python, "==" refers to value equality. This is for checking if two objects have the same value. On the other hand, "is" refers to reference equality. This is used when checking if two references refer to the same object.
